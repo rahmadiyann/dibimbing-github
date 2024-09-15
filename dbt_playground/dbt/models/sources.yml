@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: dibimbing
+    tables:
+      - name: amazon_sales_report
