@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+
 
 
 WITH t_data AS (
@@ -9,8 +9,7 @@ WITH t_data AS (
 )
 
 SELECT
-    {{ dbt_utils.generate_surrogate_key([
-        'fulfilment',
-        'fullfiled_by'
-    ])}} AS fulfilment_id,*
+    
+    
+to_hex(md5(cast(coalesce(cast(fulfilment as STRING), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(fullfiled_by as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) AS fulfilment_id,*
 FROM t_data

@@ -1,16 +1,13 @@
 {{ config(materialized='table') }}
 
-
 WITH t_data AS (
     SELECT DISTINCT 
-        `Fulfilment` AS fulfilment, 
-        COALESCE(`fulfilled-by`, '-') AS fullfiled_by
+        `Sales Channel ` AS sales_channel,
     FROM `spotify-streaming-de-project.dbt_learning.amazon_sale_report`
 )
 
 SELECT
     {{ dbt_utils.generate_surrogate_key([
-        'fulfilment',
-        'fullfiled_by'
-    ])}} AS fulfilment_id,*
+        'sales_channel'
+    ])}} AS sales_channel_id,*
 FROM t_data
