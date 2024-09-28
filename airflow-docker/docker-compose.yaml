@@ -64,6 +64,8 @@ services:
       timeout: 10s
       retries: 5
       start_period: 30s
+    env_file:
+      - .env
     depends_on:
       <<: *airflow-common-depends-on
       airflow-init:
