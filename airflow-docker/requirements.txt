@@ -1,3 +1,4 @@
-apache-airflow-providers-apache-spark
-apache-airflow-providers-apache-hive
 pandas
+sqlalchemy
+requests
+flatten-dict
