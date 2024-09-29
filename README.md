@@ -4,14 +4,29 @@ This Airflow DAG implements an ETL pipeline to extract data from a public API, t
 
 **Visualizations:**
 
-* **DAG Graph:** ![dag-graph](assignment-result/dag-graph.png)
-* **DAG Runs:** ![dag-runs](assignment-result/dag-runs.png)
-* **Table Configs:** ![table-configs](assignment-result/table-configs.png)
-* **Output Configs:** ![output-configs](assignment-result/output-configs.png)
-* **Extension Configs:** ![extension-configs](assignment-result/extension-configs.png)
-* **Precheck Logs:** ![precheck-logs](assignment-result/precheck-logs.png)
-* **Load to DB logs:** ![load-logs](assignment-result/load-logs.png)
-* **Output Directory Structure:** ![output-dir-structure](assignment-result/output-dir-structure.png)
+* **DAG Graph:** 
+![dag-graph](assignment-result/dag-graph.png)
+
+* **DAG Runs:** 
+![dag-runs](assignment-result/dag-runs.png)
+
+* **Table Configs:** 
+![table-configs](assignment-result/table-configs.png)
+
+* **Output Configs:** 
+![output-configs](assignment-result/output-configs.png)
+
+* **Extension Configs:** 
+![extension-configs](assignment-result/extension-configs.png)
+
+* **Precheck Logs:** 
+![precheck-logs](assignment-result/precheck-logs.png)
+
+* **Load to DB logs:** 
+![load-logs](assignment-result/load-logs.png)
+
+* **Output Directory Structure:** 
+![output-dir-structure](assignment-result/output-dir-structure.png)
 
 **Key Features:**
 
