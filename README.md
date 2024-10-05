@@ -6,6 +6,7 @@ This Airflow DAG performs an Extract, Load, and Transform (ETL) process, moving 
 
 ## DAG Details
 
+- **DAG File**: [assignment.py](airflow-docker/dags/assignment.py)
 - **DAG ID**: `el_assignment`
 - **Owner**: rian
 - **Start Date**: October 5, 2024
