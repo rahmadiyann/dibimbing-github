@@ -2,3 +2,5 @@ pandas
 sqlalchemy
 requests
 flatten-dict
+apache-airflow-providers-mysql
+apache-airflow-providers-postgres
