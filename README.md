@@ -10,7 +10,7 @@ This Airflow DAG performs an Extract, Load, and Transform (ETL) process, moving 
 - **DAG ID**: `el_assignment`
 - **Owner**: rian
 - **Start Date**: October 5, 2024
-- **Schedule**: `15 9-21/2 1-7,15-21 * 5` (At minute 15 past every 2nd hour from 9 through 21 on day-of-month 1 through 7 and 15 through 21 in May)
+- **Schedule**: `15 9-21/2 1-7,15-21 * 5` (At minute 15 past every 2nd hour from 9 through 21 on day-of-month 1 through 7 and 15 through 21 on the 5th day of the week/Friday)
 - **Catchup**: False
 
 ## Tables Processed
