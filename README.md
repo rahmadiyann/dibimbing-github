@@ -12,11 +12,6 @@ This Airflow DAG performs an Extract, Load, and Transform (ETL) process, moving 
 - **Schedule**: `15 9-21/2 1-7,15-21 * 5` (At minute 15 past every 2nd hour from 9 through 21 on day-of-month 1 through 7 and 15 through 21 in May)
 - **Catchup**: False
 
-## Important Files
-1. [list tables.yaml](airflow-docker/dags/resources/assignment/tables.yaml)
-2. [mysql_precheck.sql](airflow-docker/dags/resources/assignment/mysql_precheck.sql)
-3. [psql_precheck.sql](airflow-docker/dags/resources/assignment/psql_precheck.sql)
-
 ## Tables Processed
 
 The DAG processes the following tables (defined in `dags/resources/assignment/tables.yaml`):
@@ -43,16 +38,18 @@ The DAG processes the following tables (defined in `dags/resources/assignment/ta
 ## Task Details
 
 ### File System Precheck
-Creates a directory at `resources/assignment/staging` for storing temporary CSV files.
+Creates a directory at [list tables.yaml](airflow-docker/dags/resources/assignment/tables.yaml) for storing temporary CSV files.
 
 ### MySQL Precheck
-Executes `mysql_precheck.sql`, which:
+Executes [mysql_precheck.sql](airflow-docker/dags/resources/assignment/mysql_precheck.sql), which:
 - Creates tables if they don't exist
 - Truncates existing data
 - Inserts sample data into each table
 
 ### PostgreSQL Precheck
-Executes `psql_precheck.sql`, which creates tables in PostgreSQL if they don't exist.
+Executes [psql_precheck.sql](airflow-docker/dags/resources/assignment/psql_precheck.sql), which: 
+- Creates tables if they don't exist.
+- Truncates existing data
 
 ### Extract Data
 For each table:
