@@ -32,3 +32,13 @@ CREATE TABLE IF NOT EXISTS dibimbing_playlists (
     description VARCHAR(255),
     created_at TIMESTAMP
 );
+
+TRUNCATE TABLE dibimbing_songs;
+
+TRUNCATE TABLE dibimbing_albums;
+
+TRUNCATE TABLE dibimbing_artists;
+
+TRUNCATE TABLE dibimbing_genres;
+
+TRUNCATE TABLE dibimbing_playlists;
