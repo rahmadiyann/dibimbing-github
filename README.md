@@ -2,7 +2,19 @@
 
 ## Overview
 
-This Airflow DAG performs an Extract, Load, and Transform (ETL) process, moving data from MySQL to PostgreSQL for multiple tables related to a music streaming service. The DAG is designed to run every two hours from 9 AM to 9 PM on the 1st to 7th and 15th to 21st days of each month, but only in May (5th month).
+This Airflow DAG performs an Extract, Load, and Transform (ETL) process, moving data from MySQL to PostgreSQL for multiple tables related to a music streaming service. The DAG is designed to run every two hours from 9 AM to 9 PM on the 1st to 7th and 15th to 21st days of each month, on Friday.
+
+## Results
+
+* **GRAPH:** \
+![graph](airflow-docker/dags/resources/assignment/graph.png)
+
+* **TABLE RESULTS** \
+![albums_table](airflow-docker/dags/resources/assignment/albums_table.png) \
+![artists_table](airflow-docker/dags/resources/assignment/artists_table.png) \
+![genres_table](airflow-docker/dags/resources/assignment/genres_table.png) \
+![playlists_table](airflow-docker/dags/resources/assignment/playlists_table.png) \
+![songs_table](airflow-docker/dags/resources/assignment/songs_table.png) 
 
 ## DAG Details
 
