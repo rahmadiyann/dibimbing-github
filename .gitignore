@@ -1,2 +1,6 @@
-.DS_Store
-venv/
+logs/*
+!logs/.gitkeep
+notebooks/*
+!notebooks/*.ipynb
+dags/*
+!dags/*.py
