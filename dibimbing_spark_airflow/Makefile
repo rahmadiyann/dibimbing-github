@@ -187,6 +187,8 @@ metabase: postgres-create-warehouse
 clean:
 	@bash ./scripts/goodnight.sh
 
+stop:
+	@docker ps --filter name=dataeng* -aq | xargs docker stop
 
 postgres-bash:
 	@docker exec -it dataeng-postgres bash
