@@ -80,6 +80,10 @@ python kafka/assignment/consumer.py
 python kafka/assignment/producer.py
 ```
 
+## Example Output
+
+![Example Output](result.png)
+
 ## Features
 
 ### Producer
