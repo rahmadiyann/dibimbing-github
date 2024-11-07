@@ -153,7 +153,7 @@ spark-produce:
 	@echo '__________________________________________________________'
 	@docker exec ${SPARK_WORKER_CONTAINER_NAME}-1 \
 		python \
-		/scripts/event_producer.py
+		/spark-scripts/assignment/producer.py
 
 spark-consume:
 	@echo '__________________________________________________________'
@@ -161,7 +161,7 @@ spark-consume:
 	@echo '__________________________________________________________'
 	@docker exec ${SPARK_WORKER_CONTAINER_NAME}-1 \
 		spark-submit \
-		/spark-scripts/spark-event-consumer.py
+		/spark-scripts/assignment/consumer.py
 
 datahub-create:
 	@echo '__________________________________________________________'
@@ -186,6 +186,9 @@ metabase: postgres-create-warehouse
 
 clean:
 	@bash ./scripts/goodnight.sh
+
+stop:
+	@bash ./scripts/stop.sh
 
 
 postgres-bash:
