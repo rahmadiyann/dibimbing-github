@@ -1,4 +1,4 @@
-# Spark Streaming day 24 with Kafka
+# Spark Streaming day 25 with Kafka
 
 ## Overview
 
